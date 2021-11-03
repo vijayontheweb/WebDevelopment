@@ -1,0 +1,112 @@
+div {
+	background-color: #e8e8e4;
+	width: 200px;
+	height: 200px;
+	border-width: 5px;
+	border-color: #0096c7;
+	border-style: groove;
+	box-sizing: border-box;
+}
+
+#div-radius {
+	background-color: #e8e8e4;
+	border-width: 5px;
+	border-color: #0096c7;
+	border-style: groove;
+	border-radius: 10px;
+}
+
+button {
+	padding: 50px;
+}
+
+#btn1 {
+	padding: 5px 10px 0 10px;
+}
+
+#btn2 {
+	margin: 5px 10px 100px 10px;
+}
+
+h1 {
+	background-color: blueviolet;
+	display: inline;
+}
+
+span {
+	background-color: turquoise;
+	display: block;
+}
+
+#div-inline-block {
+	width: 200px;
+	height: 50px;
+	padding: 20px;
+	margin: 50px;
+	border: 5px solid rgb(236, 183, 191);
+	display: inline-block;
+}
+
+section {
+	width: 400px;
+	height: 400px;
+	background-color: black;
+}
+
+#div-percentage {
+	width: 50%;
+	height: 50%;
+	background-color: magenta;
+}
+
+article {
+	font-size: 5px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 10px;
+	margin-left: 4em; /*This one is relative to font-size of its element and NOT to its parent*/
+}
+
+#ems {
+	font-size: 4em; /*This one is relative to its parent i.e article*/
+}
+
+#em_snowball {
+	font-size: 50px;
+}
+
+#em_ul {
+	font-size: 0.7em;
+}
+
+/*Maintains the shape of border radius, no matter the size*/
+#em_btn {
+	background-color: blue;
+	font-size: 1em;
+	padding: 0 1em;
+	border-radius: 0.5em;
+}
+
+html {
+	font-size: 16px;
+}
+
+#rem_no_snowball {
+	font-size: 1rem;
+}
+
+#rem_ul {
+	font-size: 0.7rem;
+}
+
+#rem_btn {
+	background-color: blue;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+}

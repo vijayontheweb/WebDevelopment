@@ -1,0 +1,19 @@
+button {
+	color: blueviolet;
+	background-color: yellow;
+}
+
+h1 {
+	color: goldenrod;
+	background-color: lightgrey;
+}
+
+a {
+	color: rgb(89, 151, 0);
+	background-color: #49282c;
+}
+
+p {
+	color: hotpink;
+	background-color: blue;
+}

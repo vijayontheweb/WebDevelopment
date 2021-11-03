@@ -1,0 +1,54 @@
+div {
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	display: inline-block;
+}
+
+#static #middle {
+	background-color: blue;
+	position: static;
+	top: 100px; /*This has no effect on position = static */
+	left: 100px; /*This has no effect on position = static */
+}
+
+#relative #middle {
+	background-color: blue;
+	position: relative;
+	top: -50px; /*This has effect on relative */
+	left: 50px; /*This has effect on relative */
+}
+
+#absolute-static {
+	/*postion=static which is default behavior will NOT make section as closest positioned(NOT static) ancestor*/
+	position: static; /*Default behavior*/
+}
+
+#absolute-static #middle {
+	/*The element is removed from the normal document flow, and NO space is created for the element. 
+        placed relative to the initial containing block i.e. body  */
+	background-color: blue;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+
+#absolute-relative {
+	/*This will make section as closest positioned ancestor. closest positioned(NOT static) ancestor*/
+	position: relative;
+}
+
+#absolute-relative #middle {
+	/*The element is removed from the normal document flow, and NO space is created for the element */
+	background-color: blue;
+	position: absolute;
+	top: 30px;
+	left: 90px;
+}
+
+#fixed #middle {
+	background-color: blue;
+	position: fixed; /*Position remain fixed irrespective of your scroll */
+	top: 10px;
+	left: 10px;
+}

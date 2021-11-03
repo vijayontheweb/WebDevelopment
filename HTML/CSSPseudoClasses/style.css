@@ -1,0 +1,41 @@
+.tag {
+	color: #809bce;
+	background-color: #dee2e6;
+	border-radius: 100px;
+	padding: 2px;
+	font-weight: 100;
+	font-size: x-small;
+}
+
+.subscribe:hover {
+	color: #023e8a;
+	background-color: #dfe7fd;
+}
+
+.subscribe:active {
+	color: #fae0e4;
+	background-color: #ff0a54;
+}
+
+input[type="checkbox"]:checked {
+	box-shadow: 0 0 0 2px #ff7096;
+	color: crimson;
+}
+
+section:nth-of-type(2n) {
+	background-color: #c5dedd;
+}
+
+h2::first-letter {
+	color: red;
+	font-size: 50px;
+}
+
+p::first-line {
+	color: #99c1de;
+}
+
+p::selection {
+	color: #9d4edd;
+	background-color: darkseagreen;
+}

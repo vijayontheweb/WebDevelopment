@@ -1,0 +1,1 @@
+const mycolor = ['#00BCD4','#EC407A','#9c27B0','#ffff00','#0f5679', '#EFABCD'] 

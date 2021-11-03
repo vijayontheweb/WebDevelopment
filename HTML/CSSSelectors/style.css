@@ -1,0 +1,18 @@
+#signup {
+	color: crimson;
+	background-color: blue;
+}
+
+.subscribe {
+	color: #023e8a;
+	background-color: #dfe7fd;
+}
+
+.tag {
+	color: #809bce;
+	background-color: #dee2e6;
+	border-radius: 100px;
+	padding: 2px;
+	font-weight: 100;
+	font-size: x-small;
+}
