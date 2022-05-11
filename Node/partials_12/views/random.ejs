@@ -1,0 +1,23 @@
+<%- include('partials/head');%>
+
+    <body>
+        <%- include('partials/navbar');%>
+            <div class="container">
+                <h1>The random number from HTML is <%= Math.floor(Math.random()* 10)+1 %>
+                </h1>
+                <h1>The random number from Node is <%=randFromNode%>
+                </h1>
+                <h3>
+                    <% if(randFromNode%2===0) {%>
+                        The random number from Node is EVEN
+                        <%}else{%>
+                            The random number from Node is ODD
+                            <%}%>
+                </h3>
+                <h3>
+                    The random number from Node is <%= randFromNode%2===0?'EVEN':'ODD' %>
+                </h3>
+            </div>
+    </body>
+
+    </html>

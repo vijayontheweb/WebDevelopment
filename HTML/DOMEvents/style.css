@@ -1,0 +1,14 @@
+.pokemon {
+    display: inline-block;
+    text-align: center;
+}
+
+.pokemon img {
+    display: block;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 20px;        
+}

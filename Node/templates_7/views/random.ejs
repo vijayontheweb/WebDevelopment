@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The random number from HTML is <%= Math.floor(Math.random()* 10)+1 %>
+    </h1>
+    <h1>The random number from Node is <%=randFromNode%>
+    </h1>
+    <h1>WELCOME TO <%=nestedsection%> OF <%=subsection%> SUBSECTION!</h1>
+    <h3>
+        <% if(randFromNode%2===0) {%>
+            The random number from Node is EVEN
+            <%}else{%>
+                The random number from Node is ODD
+                <%}%>
+    </h3>
+    <h3>
+        The random number from Node is <%= randFromNode%2===0?'EVEN':'ODD' %>
+    </h3>
+    <h3>Family Members are:</h3>
+    <ul>
+        <%for(let member of family){%>
+            <li>
+                <%=member%>
+            </li>
+            <%}%>
+
+    </ul>
+</body>
+
+</html>

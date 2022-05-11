@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--Put jquery before bootstrap-->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/random">Random</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/section/chickens">Chickens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/section/soccer">Soccer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/section/mightyharvest">Mighty Harvest</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>The random number from HTML is <%= Math.floor(Math.random()* 10)+1 %>
+        </h1>
+        <h1>The random number from Node is <%=randFromNode%>
+        </h1>
+        <h3>
+            <% if(randFromNode%2===0) {%>
+                The random number from Node is EVEN
+                <%}else{%>
+                    The random number from Node is ODD
+                    <%}%>
+        </h3>
+        <h3>
+            The random number from Node is <%= randFromNode%2===0?'EVEN':'ODD' %>
+        </h3>
+    </div>
+</body>
+
+</html>
