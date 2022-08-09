@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW</title>
+</head>
+
+<body>
+    <h1>Show Farm!</h1>
+    <div>
+        <label for="name">Farm Name:</label>
+        <input type="text" id="name" disabled="true" value="<%= farm.name %>" size="30">
+    </div>
+    <div>
+        <label for="city">City:</label>
+        <input type="text" id="city" disabled="true" value="<%= farm.city %>" size="10">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" disabled="true" value="<%= farm.email %>" size="20">
+    </div>
+    <div>
+        <a href="/farms/<%=farm._id%>/edit">edit</a>
+        <a href="/farms">index</a>
+        <form action="/farms/<%=farm._id%>?_method=DELETE" method="POST">
+            <input type="submit" value="delete">
+        </form>
+    </div>
+</body>
+
+</html>
